@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var debug = require('debug')('Miriadax-Quizz');
+var debug = require('debug')('Miriadax');
 var app = require('../app');
 var fs = require("fs");
 var https = require("https");
