@@ -44,14 +44,14 @@ app.use(function(req,res,next){
         } else {
             var diff = process.hrtime(req.session.timepassed);
             if(diff[0]>=120){
-                console.log('Sesion Destruida!');
+                console.log('Destroy session!');
                 delete req.session.user;
                 res.redirect('/login');
             }
             console.log('benchmark took %d seconds', diff[0]);
         }
         req.session.timepassed = process.hrtime();
-        console.log('Actualizar Fecha');
+        console.log('Actualziar Date');
     }
 
     console.log('TimePAssed: '+req.session.timepassed);
