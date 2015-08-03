@@ -9,6 +9,7 @@ var options = {
 	cert: fs.readFileSync('certs/quiz-2015-cert.pem').toString()
 };
 
+app.set("view options", { layout: "inicio.ejs" });
 
 app.set('port', process.env.PORT || 3000);
 
