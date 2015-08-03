@@ -21,7 +21,7 @@ router.get('/logout', sessionController.destroy);
 router.get('/quizzes', quizController.index);
 router.get('/quizzes/:quizId(\\d+)',quizController.show);
 router.get('/quizzes/:quizId(\\d+)/answer',quizController.answer);
-router.get('/author',function(req, res) {res.render('author',{errors:[]});});
+router.get('/autor',function(req, res) {res.render('autor',{errors:[]});});
 router.get('/quizzes/new', sessionController.loginRequired,quizController.new);
 router.post('/quizzes/create', sessionController.loginRequired,quizController.create);
 router.get('/quizzes/:quizId(\\d+)/edit', sessionController.loginRequired, quizController.edit);
